@@ -3,6 +3,7 @@ test_config/*.yaml
 !test_config/example.yaml
 model_config/*.yaml
 !model_config/template.yaml
+!model_config/example.yaml
 
 *.egg-info
 __pycache__/

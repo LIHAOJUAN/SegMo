@@ -8,7 +8,7 @@ from vision_parallel.util import init_log
 if __name__ == '__main__':
     current_file_path = os.path.abspath(__file__)
     current_dir = os.path.dirname(current_file_path)
-    model_config_path = os.path.join(current_dir, "../model_config/MiniCPM.yaml")
+    model_config_path = os.path.join(current_dir, "../model_config/example.yaml")
     test_config_path = os.path.join(current_dir, "../test_config/example.yaml")
 
     config = Config(model_config_path, test_config_path)

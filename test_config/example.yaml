@@ -1,0 +1,14 @@
+data_path: './examples/Skiing.mp4'
+image_slice_num: 1
+video_slice_num: 1
+worker_num: 1
+max_frames_per_video: 64
+scene_detection_parallel_slice: 4 
+scene_difference_weight: 0.5
+scene_relevance_weight: 0.5
+adaptive_threshold: 3.0
+use_generate: False
+static_sample_threshold: 0
+output_path: './try.out'
+log_path: './try.log'
+monitor_path: './try.json'

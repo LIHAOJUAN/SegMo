@@ -1,0 +1,4 @@
+model:
+    name: "QwenVL"
+    path: "Qwen/Qwen2-VL-7B-Instruct"
+CLIP_model_path: "ViT-B/32"

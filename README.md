@@ -2,6 +2,30 @@
  
 SegMo is an end-to-end inference framework specifically designed for long-video understanding with Video Large Language Models (VideoLLM). SegMo rejects traditional downstream pruning in favor of an Upstream Intervention strategy, optimizing both what to compute and how to compute it before vision encoding. By unifying Content-Aware Sparsification (CAS) and Locally-Cohesive Segment Parallelism (LSP) under this strategy, SegMo achieves simultaneous gains in both accuracy (+12.00%) and prefill speed (3.55x).
 
+## ⚡ **Quick Start**
+
+Follow these steps to set up the environment and run a quick example:
+
+```bash
+cd ~
+git clone https://github.com/LIHAOJUAN/SegMo
+cd SegMo
+
+conda create -n vision-parallel python=3.12 -y
+conda activate vision-parallel
+
+pip install -r requirements.txt
+pip install -e .
+
+cd ..
+git clone https://github.com/openai/CLIP
+cd CLIP
+pip install -e . --no-build-isolation
+
+cd ../SegMo
+python examples/example.py
+```
+
 ## 🏗️**Algorithm-System Co-Design**
 
 SegMo's efficiency stems from the synergy between its algorithmic sparsification and its system-level parallelism.
